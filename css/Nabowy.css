@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+body {
+    font-family: sans-serif;
+
+}
+.say {
+    position: relative;
+}
+form {
+    width: 400px;
+    background-color: transparent;
+    color: white;
+    padding: 80px 30px;
+    box-shadow: 1px 4px 120px 0 #333 inset;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+input 
+{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: #eee;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+}
+input[type="submit"] {
+    background-color: #8888ff;
+    color: white;
+    cursor: pointer;
+    width: calc(100% + 10px);
+    font-weight: bolder;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+::placeholder {
+    text-align: center;
+    font-size: 15px;
+    word-wrap: wrap;
+}
+h4 {
+    background-color:#333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s all ease;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    z-index: 99;
+}
+.false {
+    max-width: 600px;
+    line-height: 1.8;
+    top: -10px;
+}
+h4:after {
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent #333 transparent;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+form button {
+    width: calc(90% / 2);
+    padding: 10px;
+    margin-left: 2%;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+form button a {
+    color: white;
+}
+form button:nth-child(3) {
+    background-color: #e14b4b;
+}
+@media (max-width:767px) {
+    form {
+        width: 300px;
+    }
+}
+button.clear,
+button.stop,
+button.start {
+    position: absolute;
+    background-color: transparent;
+    box-shadow: 1px 4px 120px 0 #333 inset;
+    color: white;
+    font-size: 20px;
+    right: 20px;
+    top: 20px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 150px;
+}
+button.start {
+    top: 60px !important;
+}
+button.stop {
+    top: 100px !important;
+}
+.parent-Of-Paswword {
+    position: relative;
+}
+.hide-Password i {
+    position: absolute;
+    color: black;
+    right: 5px;
+    top: 13px;
+    cursor: pointer;
+}
